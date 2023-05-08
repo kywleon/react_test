@@ -1,6 +1,5 @@
 import  { useState, useEffect } from 'react'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
+
 import MUIDataTable from "mui-datatables";
 
 import './App.css'
@@ -23,6 +22,7 @@ function App() {
     responsive: "standard",
     rowsPerPage: 5,
     rowsPerPageOptions: [5, 10],
+
     //this show the checkbox before the row 
     selectableRowsHideCheckboxes 	: true
   }
@@ -44,23 +44,6 @@ function App() {
         columns={columns}
         options={options}
       />
-
-      {/* <div>
-          <h2>Hello world</h2>
-        </div>
-        <div>
-        {users.map(user => (
-          <div key={user.id}>
-            <h2>{user.name}</h2>
-            <p>{user.email}</p>
-            <p>{user.phone}</p>
-            <p>{user.website}</p>
-            <p>{user.address.street}, {user.address.suite}, {user.address.city}, {user.address.zipcode}</p>
-            <p>{user.company.name}, {user.company.catchPhrase}, {user.company.bs}</p>
-          </div>
-        ))}
-      </div> */}
-    
     </>
   )
 }
